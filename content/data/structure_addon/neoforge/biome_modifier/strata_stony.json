@@ -1,0 +1,31 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#structure_addon:stony",
+  "features": [
+    "structure_addon:stony/red_granite_stone",
+    "structure_addon:stony/black_granite_stone",
+    "structure_addon:stony/rhyolite_stone",
+    "structure_addon:stony/andesite_stone",
+    "structure_addon:stony/gabbro_stone",
+    "structure_addon:stony/basalt_stone",
+    "structure_addon:stony/komatiite_stone",
+    "structure_addon:stony/dacite_stone",
+    "structure_addon:stony/gneiss_stone",
+    "structure_addon:stony/eclogite_stone",
+    "structure_addon:stony/marble_stone",
+    "structure_addon:stony/quartzite_stone",
+    "structure_addon:stony/blueschist_stone",
+    "structure_addon:stony/greenschist_stone",
+    "structure_addon:stony/soapstone_stone",
+    "structure_addon:stony/migmatite_stone",
+    "structure_addon:stony/limestone_stone",
+    "structure_addon:stony/chalk_stone",
+    "structure_addon:stony/shale_stone",
+    "structure_addon:stony/siltstone_stone",
+    "structure_addon:stony/lignite_stone",
+    "structure_addon:stony/dolomite_stone",
+    "structure_addon:stony/greywacke_stone",
+    "structure_addon:stony/chert_stone"
+  ],
+  "step": "underground_ores"
+}

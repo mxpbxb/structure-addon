@@ -1,0 +1,12 @@
+{
+  "feature": "wildcaves:crying_obsidian",
+  "placement": [
+    {
+      "predicate": {
+        "blocks": "minecraft:end_stone",
+        "type": "minecraft:matching_blocks"
+      },
+      "type": "minecraft:block_predicate_filter"
+    }
+  ]
+}

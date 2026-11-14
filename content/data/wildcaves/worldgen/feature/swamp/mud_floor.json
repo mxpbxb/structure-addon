@@ -1,0 +1,82 @@
+{
+  "depth": 2,
+  "extra_bottom_block_chance": 0,
+  "extra_edge_column_chance": 0.3,
+  "ground_state": {
+    "entries": [
+      {
+        "data": "minecraft:mud",
+        "weight": 10
+      },
+      {
+        "data": {
+          "id": "minecraft:muddy_mangrove_roots",
+          "properties": {
+            "axis": "x"
+          }
+        },
+        "weight": 1
+      },
+      {
+        "data": {
+          "id": "minecraft:muddy_mangrove_roots",
+          "properties": {
+            "axis": "y"
+          }
+        },
+        "weight": 1
+      },
+      {
+        "data": {
+          "id": "minecraft:muddy_mangrove_roots",
+          "properties": {
+            "axis": "z"
+          }
+        },
+        "weight": 1
+      }
+    ],
+    "type": "minecraft:weighted"
+  },
+  "replaceable": "#minecraft:base_stone_overworld",
+  "surface": "floor",
+  "type": "minecraft:vegetation_patch",
+  "vegetation_chance": 0.1,
+  "vegetation_feature": {
+    "feature": {
+      "to_place": {
+        "entries": [
+          {
+            "data": "minecraft:fern",
+            "weight": 8
+          },
+          {
+            "data": "minecraft:cave_air",
+            "weight": 17
+          },
+          {
+            "data": "minecraft:short_grass",
+            "weight": 16
+          },
+          {
+            "data": "minecraft:red_mushroom",
+            "weight": 1
+          },
+          {
+            "data": "minecraft:brown_mushroom",
+            "weight": 1
+          }
+        ],
+        "type": "minecraft:weighted"
+      },
+      "type": "minecraft:simple_block"
+    },
+    "placement": []
+  },
+  "vertical_range": 5,
+  "xz_radius": {
+    "max_inclusive": 7,
+    "min_inclusive": 4,
+    "type": "minecraft:uniform"
+  }
+}

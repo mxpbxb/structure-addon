@@ -1,0 +1,8 @@
+{
+  "biomes": "#wildcaves:spawn_cobweb",
+  "features": [
+    "wildcaves:cobweb"
+  ],
+  "step": "vegetal_decoration",
+  "type": "neoforge:add_features"
+}

@@ -1,0 +1,14 @@
+{
+  "discard_chance_on_air_exposure": 0,
+  "size": 6,
+  "targets": [
+    {
+      "state": "minecraft:obsidian",
+      "target": {
+        "block": "minecraft:end_stone",
+        "predicate_type": "minecraft:block_match"
+      }
+    }
+  ],
+  "type": "minecraft:ore"
+}

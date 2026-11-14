@@ -1,0 +1,69 @@
+{
+  "features": [
+    {
+      "feature": {
+        "features": [
+          {
+            "feature": "minecraft:ore_diamond_large",
+            "placement": [
+              {
+                "count": 10,
+                "type": "minecraft:count"
+              },
+              {
+                "type": "minecraft:offset",
+                "x": {
+                  "max": 4,
+                  "min": -4,
+                  "plateau": 0,
+                  "type": "minecraft:trapezoid"
+                },
+                "y": {
+                  "max": 4,
+                  "min": -4,
+                  "plateau": 0,
+                  "type": "minecraft:trapezoid"
+                },
+                "z": {
+                  "max": 4,
+                  "min": -4,
+                  "plateau": 0,
+                  "type": "minecraft:trapezoid"
+                }
+              }
+            ]
+          }
+        ],
+        "type": "minecraft:simple_random_selector"
+      },
+      "placement": [
+        {
+          "count": 10,
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:offset",
+          "x": {
+            "max": 10,
+            "min": -10,
+            "plateau": 0,
+            "type": "minecraft:trapezoid"
+          },
+          "y": {
+            "max": 10,
+            "min": -10,
+            "plateau": 0,
+            "type": "minecraft:trapezoid"
+          },
+          "z": {
+            "max": 10,
+            "min": -10,
+            "plateau": 0,
+            "type": "minecraft:trapezoid"
+          }
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:simple_random_selector"
+}

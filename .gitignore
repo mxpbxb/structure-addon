@@ -1,0 +1,4 @@
+content/target/
+__pycache__/
+*.hmod
+*.jar

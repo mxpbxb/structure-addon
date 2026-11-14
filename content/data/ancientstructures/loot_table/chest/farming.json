@@ -1,0 +1,184 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 2.0,
+      "entries": [
+        {
+          "name": "acacia_leaves",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "oak_leaves",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "campfire",
+          "type": "item",
+          "weight": 3
+        },
+        {
+          "name": "red_mushroom",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "brown_mushroom",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "wheat_seeds",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "pumpkin_seeds",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "melon_seeds",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "melon_slice",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "melon",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "bone_meal",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "hay_block",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "wheat",
+          "type": "item",
+          "weight": 1
+        }
+      ],
+      "functions": [
+        {
+          "count": {
+            "max": 3,
+            "min": 1,
+            "type": "uniform"
+          },
+          "function": "set_count"
+        }
+      ],
+      "rolls": 8.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.5,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.7,
+                "min": 0.5,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "stone_hoe",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.5,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.7,
+                "min": 0.5,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "stone_shovel",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.5,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.7,
+                "min": 0.5,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "iron_hoe",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.5,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.7,
+                "min": 0.5,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "iron_shovel",
+          "type": "item"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "type": "chest"
+}

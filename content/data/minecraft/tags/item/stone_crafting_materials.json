@@ -1,0 +1,20 @@
+{
+  "values": [
+    "structure_addon:red_granite_cobble",
+    "structure_addon:black_granite_cobble",
+    "structure_addon:rhyolite_cobble",
+    "structure_addon:andesite_cobble",
+    "structure_addon:gabbro_cobble",
+    "structure_addon:basalt_cobble",
+    "structure_addon:komatiite_cobble",
+    "structure_addon:dacite_cobble",
+    "structure_addon:gneiss_cobble",
+    "structure_addon:eclogite_cobble",
+    "structure_addon:marble_cobble",
+    "structure_addon:quartzite_cobble",
+    "structure_addon:blueschist_cobble",
+    "structure_addon:greenschist_cobble",
+    "structure_addon:soapstone_cobble",
+    "structure_addon:migmatite_cobble"
+  ]
+}

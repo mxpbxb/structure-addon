@@ -1,0 +1,227 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 731400913,
+    "separation": 96,
+    "spacing": 256,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "reccomplex:babylon_tower",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:big_clockwork_site",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:big_pyramid",
+      "weight": 2
+    },
+    {
+      "structure": "reccomplex:clay_mound",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:clay_mound1",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:corrupted_ender_tree",
+      "weight": 2
+    },
+    {
+      "structure": "reccomplex:desert_beacon",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:desert_fort",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:desert_hut",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:desert_watchtower",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:dinosaur_skeleton",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:dinosaur_skull",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:elven_pond",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:forest_beacon",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:forest_maze",
+      "weight": 2
+    },
+    {
+      "structure": "reccomplex:gigantic_tree",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:gigantic_tree1",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:hill_altar_house",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:joker_tower",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:lone_pillars",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:meteor_site",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:monolyth_holy",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:monolyth_unholy",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:mystical_tree",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:mystical_tree1",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:mystical_tree2",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:old_watchtower",
+      "weight": 2
+    },
+    {
+      "structure": "reccomplex:peaceful_crypt",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:pirate_hideout",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:shrine_small_air",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:shrine_small_earth",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:shrine_small_fire",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:shrine_small_water",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:small_abandoned_mine",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:small_clockwork_site",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:small_fort_ruins",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:small_pyramid",
+      "weight": 2
+    },
+    {
+      "structure": "reccomplex:small_wooden_cottage",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:small_wooden_cottage1",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:small_wooden_cottage2",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:spider_pit",
+      "weight": 2
+    },
+    {
+      "structure": "reccomplex:stone_mound",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:stone_mound1",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:stone_mound2",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:stone_mound3",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:temple_pyramid",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:tribal_jungle_head",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:unnatural_crater",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:veldt_bath",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:well_shrine",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:white_willow_large",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:witch_pillars",
+      "weight": 2
+    },
+    {
+      "structure": "reccomplex:wood_wall_remains",
+      "weight": 3
+    },
+    {
+      "structure": "reccomplex:wooden_clock_tower",
+      "weight": 1
+    }
+  ]
+}

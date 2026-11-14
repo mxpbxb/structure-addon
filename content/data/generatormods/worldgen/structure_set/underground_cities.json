@@ -1,0 +1,22 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 731400920,
+    "separation": 20,
+    "spacing": 56
+  },
+  "structures": [
+    {
+      "structure": "generatormods:city_underground_mossy_coblestone_city",
+      "weight": 6
+    },
+    {
+      "structure": "generatormods:city_underground_obsidian_city",
+      "weight": 2
+    },
+    {
+      "structure": "generatormods:city_underground_stone_city",
+      "weight": 6
+    }
+  ]
+}

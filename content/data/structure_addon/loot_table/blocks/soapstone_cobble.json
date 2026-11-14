@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      },
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "structure_addon:soapstone_cobble"
+        }
+      ],
+      "rolls": 1
+    }
+  ],
+  "random_sequence": "structure_addon:blocks/soapstone_cobble"
+}

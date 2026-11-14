@@ -1,0 +1,81 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 2.0,
+      "entries": [
+        {
+          "name": "string",
+          "type": "item",
+          "weight": 3
+        },
+        {
+          "name": "raw_iron",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "stick",
+          "type": "item",
+          "weight": 3
+        },
+        {
+          "name": "leather",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "arrow",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "flint",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "iron_nugget",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "flower_pot",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "torch",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "lantern",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "ladder",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "bone",
+          "type": "item",
+          "weight": 1
+        }
+      ],
+      "functions": [
+        {
+          "count": {
+            "max": 3,
+            "min": 1,
+            "type": "uniform"
+          },
+          "function": "set_count"
+        }
+      ],
+      "rolls": 6.0
+    }
+  ],
+  "type": "chest"
+}

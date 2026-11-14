@@ -1,0 +1,123 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 731400917,
+    "separation": 96,
+    "spacing": 256,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "generatormods:ca_ruin_mossy_0",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_mossy_1",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_mossy_2",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_mossy_3",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_mossy_4",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_mossy_5",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_mossy_6",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_stone_0",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_stone_1",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_stone_2",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_stone_3",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_stone_4",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_stone_5",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_stone_6",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_sandstone_0",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_sandstone_1",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_sandstone_2",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_sandstone_3",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_sandstone_4",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_sandstone_5",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_sandstone_6",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_snow_0",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_snow_1",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_snow_2",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_snow_3",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_snow_4",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_snow_5",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:ca_ruin_snow_6",
+      "weight": 1
+    }
+  ]
+}

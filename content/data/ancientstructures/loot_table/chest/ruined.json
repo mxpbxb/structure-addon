@@ -1,0 +1,363 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 2.0,
+      "entries": [
+        {
+          "name": "skeleton_skull",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "bone",
+          "type": "item",
+          "weight": 3
+        },
+        {
+          "name": "stick",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "raw_iron",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "arrow",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "flint",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "iron_nugget",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "infested_cobblestone",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "cobweb",
+          "type": "item",
+          "weight": 3
+        },
+        {
+          "name": "coal",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "name_tag",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "leather",
+          "type": "item",
+          "weight": 1
+        }
+      ],
+      "functions": [
+        {
+          "count": {
+            "max": 3,
+            "min": 1,
+            "type": "uniform"
+          },
+          "function": "set_count"
+        }
+      ],
+      "rolls": 6.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 1,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 1,
+                "min": 0.8,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "leather_helmet",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 1,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 1,
+                "min": 0.8,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "leather_chestplate",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 1,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 1,
+                "min": 0.8,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "leather_leggings",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 1,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 1,
+                "min": 0.8,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "leather_boots",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.5,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.7,
+                "min": 0.5,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "iron_helmet",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.5,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.7,
+                "min": 0.5,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "iron_chestplate",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.5,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.7,
+                "min": 0.5,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "iron_leggings",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.5,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.7,
+                "min": 0.5,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "iron_boots",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.25,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.2,
+                "min": 0.1,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "diamond_helmet",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.25,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.2,
+                "min": 0.1,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "diamond_chestplate",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.25,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.2,
+                "min": 0.1,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "diamond_leggings",
+          "type": "item"
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.25,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.2,
+                "min": 0.1,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "diamond_boots",
+          "type": "item"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "type": "chest"
+}

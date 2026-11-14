@@ -1,0 +1,111 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 2.0,
+      "entries": [
+        {
+          "name": "apple",
+          "type": "item",
+          "weight": 3
+        },
+        {
+          "name": "candle",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "carrot",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "brown_mushroom",
+          "type": "item",
+          "weight": 3
+        },
+        {
+          "name": "cooked_cod",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "cooked_chicken",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "cookie",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "leather",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "bread",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "baked_potato",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "book",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "egg",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "sugar",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "honeycomb",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "cooked_rabbit",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "mushroom_stew",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "red_mushroom",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "potato",
+          "type": "item",
+          "weight": 1
+        }
+      ],
+      "functions": [
+        {
+          "count": {
+            "max": 3,
+            "min": 1,
+            "type": "uniform"
+          },
+          "function": "set_count"
+        }
+      ],
+      "rolls": 6.0
+    }
+  ],
+  "type": "chest"
+}

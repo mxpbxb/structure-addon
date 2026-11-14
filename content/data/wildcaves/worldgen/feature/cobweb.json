@@ -1,0 +1,46 @@
+{
+  "features": [
+    {
+      "feature": {
+        "targets": [
+          {
+            "state": "minecraft:cobweb",
+            "target": {
+              "predicate_type": "minecraft:tag_match",
+              "tag": "minecraft:air"
+            }
+          }
+        ],
+        "type": "minecraft:replace_single_block"
+      },
+      "placement": [
+        {
+          "count": 10,
+          "type": "minecraft:count"
+        },
+        {
+          "type": "minecraft:offset",
+          "x": {
+            "max": 5,
+            "min": -5,
+            "plateau": 0,
+            "type": "minecraft:trapezoid"
+          },
+          "y": {
+            "max": 4,
+            "min": -4,
+            "plateau": 0,
+            "type": "minecraft:trapezoid"
+          },
+          "z": {
+            "max": 5,
+            "min": -5,
+            "plateau": 0,
+            "type": "minecraft:trapezoid"
+          }
+        }
+      ]
+    }
+  ],
+  "type": "minecraft:simple_random_selector"
+}

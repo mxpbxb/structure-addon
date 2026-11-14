@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:jigsaw",
+  "biomes": "#reccomplex:has_structure/forest_beacon",
+  "max_distance_from_center": 128,
+  "size": 1,
+  "spawn_overrides": {},
+  "start_pool": "reccomplex:forest_beacon",
+  "use_expansion_hack": false,
+  "step": "surface_structures",
+  "terrain_adaptation": "beard_box",
+  "project_start_to_heightmap": "WORLD_SURFACE_WG",
+  "start_height": {
+    "absolute": -2
+  }
+}

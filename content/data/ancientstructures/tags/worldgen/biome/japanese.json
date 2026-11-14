@@ -1,0 +1,17 @@
+{
+  "values": [
+    "minecraft:taiga",
+    "minecraft:snowy_taiga",
+    "minecraft:old_growth_pine_taiga",
+    "minecraft:old_growth_spruce_taiga",
+    "minecraft:cherry_grove",
+    "biomesoplenty:maple_woods",
+    "biomesoplenty:cherry_blossom_grove",
+    "biomesoplenty:coniferous_forest",
+    "biomesoplenty:snowy_coniferous_forest",
+    "biomesoplenty:fir_clearing",
+    "biomesoplenty:snowy_fir_clearing",
+    "biomesoplenty:snowy_maple_woods",
+    "biomesoplenty:forested_field"
+  ]
+}

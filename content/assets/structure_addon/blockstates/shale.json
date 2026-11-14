@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "structure_addon:block/shale"
+    }
+  }
+}

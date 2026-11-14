@@ -1,0 +1,27 @@
+{
+  "feature": "wildcaves:ore_vein/overworld/diamond",
+  "placement": [
+    {
+      "chance": 32,
+      "type": "minecraft:rarity_filter"
+    },
+    {
+      "height": {
+        "max_inclusive": {
+          "absolute": 16
+        },
+        "min_inclusive": {
+          "absolute": -64
+        },
+        "type": "minecraft:uniform"
+      },
+      "type": "minecraft:height_range"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

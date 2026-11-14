@@ -1,0 +1,26 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 4.0,
+      "entries": [
+        {
+          "name": "sweet_berries",
+          "type": "item",
+          "weight": 3
+        }
+      ],
+      "functions": [
+        {
+          "count": {
+            "max": 3,
+            "min": 1,
+            "type": "uniform"
+          },
+          "function": "set_count"
+        }
+      ],
+      "rolls": 8.0
+    }
+  ],
+  "type": "chest"
+}

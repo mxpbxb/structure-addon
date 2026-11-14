@@ -1,0 +1,239 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 731400915,
+    "separation": 96,
+    "spacing": 256,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "generatormods:archway",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:battle_basement_easy",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:battle_basement_hard",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:battle_basement_medium",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:battle_basement_underground",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:block_henge",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:brick_house",
+      "weight": 4
+    },
+    {
+      "structure": "generatormods:graveyard_haunted",
+      "weight": 2
+    },
+    {
+      "structure": "generatormods:guard_house",
+      "weight": 2
+    },
+    {
+      "structure": "generatormods:market_stall",
+      "weight": 6
+    },
+    {
+      "structure": "generatormods:mausoleum",
+      "weight": 2
+    },
+    {
+      "structure": "generatormods:maze_mansion",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:melon_farm",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:mob_tower_five_tier",
+      "weight": 2
+    },
+    {
+      "structure": "generatormods:obelisk",
+      "weight": 3
+    },
+    {
+      "structure": "generatormods:portal_shrine",
+      "weight": 2
+    },
+    {
+      "structure": "generatormods:prison_tower",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:short_tower",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:smithy",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:snow_henge",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:snow_house1",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:stone_church1",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:stone_house",
+      "weight": 6
+    },
+    {
+      "structure": "generatormods:taverna",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:tiny_farm_field",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:tower_dungeon_wizards",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_buildings1",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_buildings10",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_buildings11",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_buildings2",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_buildings3",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_buildings4",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_buildings5",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_buildings6",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_buildings7",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_buildings8",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_buildings9",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_market_and_shops",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:town_market_large",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:townpack_barn",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:townpack_well",
+      "weight": 3
+    },
+    {
+      "structure": "generatormods:tree_dungeon",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:vanilla_village_church",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:vanilla_village_cobble",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:vanilla_village_empty",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:vanilla_village_field",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:vanilla_village_field_double",
+      "weight": 2
+    },
+    {
+      "structure": "generatormods:vanilla_village_field_r",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:vanilla_village_forge",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:vanilla_village_hut",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:vanilla_village_ladder",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:vanilla_village_library",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:vanilla_village_pig",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:vanilla_village_well",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:watch_tower_woodand_stone",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:wood_house",
+      "weight": 2
+    },
+    {
+      "structure": "generatormods:ziggurat",
+      "weight": 10
+    }
+  ]
+}

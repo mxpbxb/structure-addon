@@ -1,0 +1,83 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 2.0,
+      "entries": [
+        {
+          "name": "leather",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "gold_nugget",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "raw_gold",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "feather",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "arrow",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "oak_leaves",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "functions": [
+            {
+              "conditions": [
+                {
+                  "chance": 0.5,
+                  "condition": "minecraft:random_chance"
+                },
+                {
+                  "chance": 0.2,
+                  "condition": "minecraft:random_chance"
+                }
+              ],
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "damage": {
+                "max": 0.2,
+                "min": 0.6,
+                "type": "uniform"
+              },
+              "function": "set_damage"
+            }
+          ],
+          "name": "bow",
+          "type": "item"
+        }
+      ],
+      "functions": [
+        {
+          "count": {
+            "max": 2,
+            "min": 1,
+            "type": "uniform"
+          },
+          "function": "set_count"
+        }
+      ],
+      "rolls": 6.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "entries": [],
+      "rolls": 1.0
+    }
+  ],
+  "type": "chest"
+}

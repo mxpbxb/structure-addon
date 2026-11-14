@@ -1,0 +1,316 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "functions": [
+            {
+              "count": {
+                "max": 32,
+                "min": 8
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:bread",
+          "type": "minecraft:item",
+          "weight": 4
+        },
+        {
+          "functions": [
+            {
+              "count": {
+                "max": 16,
+                "min": 4
+              },
+              "function": "minecraft:set_count"
+            }
+          ],
+          "name": "minecraft:string",
+          "type": "minecraft:item",
+          "weight": 4
+        },
+        {
+          "functions": [
+            {
+              "enchantments": {
+                "minecraft:efficiency": {
+                  "max": 5,
+                  "min": 0
+                },
+                "minecraft:mending": {
+                  "max": 1,
+                  "min": 0
+                },
+                "minecraft:silk_touch": 1,
+                "minecraft:unbreaking": {
+                  "max": 3,
+                  "min": 0
+                }
+              },
+              "function": "minecraft:set_enchantments"
+            }
+          ],
+          "name": "minecraft:iron_pickaxe",
+          "type": "minecraft:item",
+          "weight": 3
+        },
+        {
+          "functions": [
+            {
+              "enchantments": {
+                "minecraft:efficiency": {
+                  "max": 5,
+                  "min": 0
+                },
+                "minecraft:fortune": {
+                  "max": 3,
+                  "min": 1
+                },
+                "minecraft:mending": {
+                  "max": 1,
+                  "min": 0
+                },
+                "minecraft:unbreaking": {
+                  "max": 3,
+                  "min": 0
+                }
+              },
+              "function": "minecraft:set_enchantments"
+            }
+          ],
+          "name": "minecraft:iron_pickaxe",
+          "type": "minecraft:item",
+          "weight": 3
+        },
+        {
+          "functions": [
+            {
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "functions": [
+                    {
+                      "conditions": [
+                        {
+                          "chance": 0.5,
+                          "condition": "minecraft:random_chance"
+                        }
+                      ],
+                      "count": {
+                        "max": 32,
+                        "min": 6
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:raw_copper",
+                  "type": "minecraft:item",
+                  "weight": 6
+                },
+                {
+                  "conditions": [
+                    {
+                      "chance": 0.5,
+                      "condition": "minecraft:random_chance"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "count": {
+                        "max": 16,
+                        "min": 1
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:raw_gold",
+                  "type": "minecraft:item",
+                  "weight": 1
+                },
+                {
+                  "conditions": [
+                    {
+                      "chance": 0.5,
+                      "condition": "minecraft:random_chance"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "count": {
+                        "max": 24,
+                        "min": 1
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:raw_iron",
+                  "type": "minecraft:item",
+                  "weight": 3
+                }
+              ],
+              "function": "minecraft:set_contents"
+            }
+          ],
+          "name": "minecraft:bundle",
+          "type": "minecraft:item",
+          "weight": 2
+        },
+        {
+          "functions": [
+            {
+              "component": "minecraft:bundle_contents",
+              "entries": [
+                {
+                  "conditions": [
+                    {
+                      "chance": 0.25,
+                      "condition": "minecraft:random_chance"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "count": {
+                        "max": 6,
+                        "min": 1
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:emerald",
+                  "type": "minecraft:item",
+                  "weight": 3
+                },
+                {
+                  "conditions": [
+                    {
+                      "chance": 0.25,
+                      "condition": "minecraft:random_chance"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "count": {
+                        "max": 3,
+                        "min": 1
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:diamond",
+                  "type": "minecraft:item",
+                  "weight": 1
+                },
+                {
+                  "conditions": [
+                    {
+                      "chance": 0.5,
+                      "condition": "minecraft:random_chance"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "count": {
+                        "max": 4,
+                        "min": 1
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:iron_ingot",
+                  "type": "minecraft:item",
+                  "weight": 6
+                },
+                {
+                  "conditions": [
+                    {
+                      "chance": 0.5,
+                      "condition": "minecraft:random_chance"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "count": {
+                        "max": 4,
+                        "min": 1
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:gold_ingot",
+                  "type": "minecraft:item",
+                  "weight": 4
+                },
+                {
+                  "conditions": [
+                    {
+                      "chance": 0.5,
+                      "condition": "minecraft:random_chance"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "count": {
+                        "max": 36,
+                        "min": 9
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:gold_nugget",
+                  "type": "minecraft:item",
+                  "weight": 4
+                },
+                {
+                  "conditions": [
+                    {
+                      "chance": 0.5,
+                      "condition": "minecraft:random_chance"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "count": {
+                        "max": 36,
+                        "min": 9
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:iron_nugget",
+                  "type": "minecraft:item",
+                  "weight": 6
+                },
+                {
+                  "conditions": [
+                    {
+                      "chance": 0.5,
+                      "condition": "minecraft:random_chance"
+                    }
+                  ],
+                  "functions": [
+                    {
+                      "count": {
+                        "max": 6,
+                        "min": 1
+                      },
+                      "function": "minecraft:set_count"
+                    }
+                  ],
+                  "name": "minecraft:copper_ingot",
+                  "type": "minecraft:item",
+                  "weight": 8
+                }
+              ],
+              "function": "minecraft:set_contents"
+            }
+          ],
+          "name": "minecraft:bundle",
+          "type": "minecraft:item",
+          "weight": 1
+        }
+      ],
+      "rolls": 1
+    }
+  ]
+}

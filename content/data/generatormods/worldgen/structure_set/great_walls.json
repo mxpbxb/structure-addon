@@ -1,0 +1,47 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 731400918,
+    "separation": 160,
+    "spacing": 384,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "generatormods:wall_asiatic_wall",
+      "weight": 4
+    },
+    {
+      "structure": "generatormods:wall_covered_wall",
+      "weight": 2
+    },
+    {
+      "structure": "generatormods:wall_derelict_road",
+      "weight": 2
+    },
+    {
+      "structure": "generatormods:wall_ruined_mossy_cobblestone_wall",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:wall_sandstone_wall",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:wall_sandstone_wall_castle_defenders",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:wall_stonebrick_wall",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:wall_stonebrick_wall_castle_defenders",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:wall_wood_palisade",
+      "weight": 2
+    }
+  ]
+}

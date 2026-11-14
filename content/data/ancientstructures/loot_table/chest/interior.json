@@ -1,0 +1,106 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 2.0,
+      "entries": [
+        {
+          "name": "apple",
+          "type": "item",
+          "weight": 3
+        },
+        {
+          "name": "candle",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "melon_slice",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "carrot",
+          "type": "item",
+          "weight": 3
+        },
+        {
+          "name": "cooked_beef",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "cooked_chicken",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "cookie",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "pumpkin_pie",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "bread",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "egg",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "sugar",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "honey_bottle",
+          "type": "item",
+          "weight": 2
+        },
+        {
+          "name": "cooked_cod",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "mushroom_stew",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "beetroot_soup",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "potato",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "cake",
+          "type": "item",
+          "weight": 1
+        }
+      ],
+      "functions": [
+        {
+          "count": {
+            "max": 3,
+            "min": 1,
+            "type": "uniform"
+          },
+          "function": "set_count"
+        }
+      ],
+      "rolls": 6.0
+    }
+  ],
+  "type": "chest"
+}

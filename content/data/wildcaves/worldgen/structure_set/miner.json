@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "salt": 1816513366,
+    "separation": 8,
+    "spacing": 16,
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "wildcaves:miner",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 731400919,
+    "separation": 192,
+    "spacing": 448,
+    "spread_type": "triangular"
+  },
+  "structures": [
+    {
+      "structure": "generatormods:city_cobblestone_city",
+      "weight": 5
+    },
+    {
+      "structure": "generatormods:city_new_stone_city",
+      "weight": 10
+    },
+    {
+      "structure": "generatormods:city_ruined_mossy_city",
+      "weight": 3
+    },
+    {
+      "structure": "generatormods:city_ruined_sandstone_city",
+      "weight": 3
+    },
+    {
+      "structure": "generatormods:city_sandstone_city",
+      "weight": 1
+    },
+    {
+      "structure": "generatormods:city_vanilla_village_prosperous",
+      "weight": 10
+    }
+  ]
+}

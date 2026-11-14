@@ -1,0 +1,22 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 731400914,
+    "separation": 8,
+    "spacing": 28
+  },
+  "structures": [
+    {
+      "structure": "reccomplex:blaze_spawner_crystal",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:underground_crypt",
+      "weight": 1
+    },
+    {
+      "structure": "reccomplex:underground_treeoid",
+      "weight": 1
+    }
+  ]
+}

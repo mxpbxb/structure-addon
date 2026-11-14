@@ -1,0 +1,20 @@
+{
+  "values": [
+    "minecraft:plains",
+    "minecraft:sunflower_plains",
+    "minecraft:forest",
+    "minecraft:flower_forest",
+    "minecraft:meadow",
+    "minecraft:birch_forest",
+    "minecraft:old_growth_birch_forest",
+    "biomesoplenty:shrubland",
+    "biomesoplenty:woodland",
+    "biomesoplenty:seasonal_forest",
+    "biomesoplenty:orchard",
+    "biomesoplenty:aspen_glade",
+    "biomesoplenty:prairie",
+    "biomesoplenty:grassland",
+    "biomesoplenty:pasture",
+    "biomesoplenty:lavender_field"
+  ]
+}

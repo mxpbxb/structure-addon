@@ -1,0 +1,36 @@
+{
+  "feature": {
+    "default": "wildcaves:ore_obsidian",
+    "features": [
+      {
+        "chance": 0.25,
+        "feature": "wildcaves:ore_crying_obsidian"
+      }
+    ],
+    "type": "minecraft:random_selector"
+  },
+  "placement": [
+    {
+      "count": 2,
+      "type": "minecraft:count"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "height": {
+        "max_inclusive": {
+          "absolute": 60
+        },
+        "min_inclusive": {
+          "absolute": 0
+        },
+        "type": "minecraft:uniform"
+      },
+      "type": "minecraft:height_range"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

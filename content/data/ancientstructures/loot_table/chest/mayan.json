@@ -1,0 +1,51 @@
+{
+  "pools": [
+    {
+      "bonus_rolls": 4.0,
+      "entries": [
+        {
+          "name": "jungle_leaves",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "green_dye",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "cocoa_beans",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "melon_slice",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "vine",
+          "type": "item",
+          "weight": 1
+        },
+        {
+          "name": "moss_block",
+          "type": "item",
+          "weight": 1
+        }
+      ],
+      "functions": [
+        {
+          "count": {
+            "max": 3,
+            "min": 1,
+            "type": "uniform"
+          },
+          "function": "set_count"
+        }
+      ],
+      "rolls": 8.0
+    }
+  ],
+  "type": "chest"
+}

@@ -1,0 +1,16 @@
+{
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "value": "wildcaves:miner/mono"
+        }
+      ],
+      "rolls": {
+        "max": 10,
+        "min": 1
+      }
+    }
+  ]
+}

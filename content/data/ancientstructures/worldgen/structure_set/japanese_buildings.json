@@ -1,0 +1,23 @@
+{
+  "placement": {
+    "salt": 25449,
+    "separation": 128,
+    "spacing": 320,
+    "spread_type": "triangular",
+    "type": "minecraft:random_spread"
+  },
+  "structures": [
+    {
+      "structure": "ancientstructures:japanese_pagoda",
+      "weight": 1
+    },
+    {
+      "structure": "ancientstructures:rengoku_house",
+      "weight": 1
+    },
+    {
+      "structure": "ancientstructures:japanese_temple",
+      "weight": 1
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "values": [
+    "structure_addon:red_granite",
+    "structure_addon:black_granite",
+    "structure_addon:rhyolite",
+    "structure_addon:andesite",
+    "structure_addon:gabbro",
+    "structure_addon:basalt",
+    "structure_addon:komatiite",
+    "structure_addon:dacite",
+    "structure_addon:gneiss",
+    "structure_addon:eclogite",
+    "structure_addon:marble",
+    "structure_addon:quartzite",
+    "structure_addon:blueschist",
+    "structure_addon:greenschist",
+    "structure_addon:soapstone",
+    "structure_addon:migmatite",
+    "structure_addon:limestone",
+    "structure_addon:chalk",
+    "structure_addon:shale",
+    "structure_addon:siltstone",
+    "structure_addon:lignite",
+    "structure_addon:dolomite",
+    "structure_addon:greywacke",
+    "structure_addon:chert"
+  ]
+}
