@@ -11,5 +11,5 @@
     "absolute": -2
   },
   "step": "surface_structures",
-  "terrain_adaptation": "beard_box"
+  "terrain_adaptation": "beard_thin"
 }

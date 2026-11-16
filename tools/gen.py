@@ -326,7 +326,7 @@ for s in rc_structs:
         st.update(step='underground_structures', terrain_adaptation='encapsulate',
                   start_height={'type': 'minecraft:uniform', 'min_inclusive': {'absolute': lo}, 'max_inclusive': {'absolute': hi}})
     else:
-        st.update(step='surface_structures', terrain_adaptation='beard_box', project_start_to_heightmap='WORLD_SURFACE_WG',
+        st.update(step='surface_structures', terrain_adaptation='beard_thin', project_start_to_heightmap='WORLD_SURFACE_WG',
                   start_height={'absolute': int(s['minY'])})
     wjson('data/reccomplex/worldgen/structure/%s.json' % nm, st)
 
@@ -575,7 +575,7 @@ for s in gm_structs:
     if s['under']:
         st.update(step='underground_structures', terrain_adaptation='encapsulate')
     else:
-        st.update(step='surface_structures', terrain_adaptation='beard_box')
+        st.update(step='surface_structures', terrain_adaptation='beard_thin')
     wjson('data/generatormods/worldgen/structure/%s.json' % nm, st)
 wjson('data/generatormods/worldgen/structure_set/surface.json', {
     'placement': {'type': 'minecraft:random_spread', 'salt': 731400915, 'separation': 96, 'spacing': 256, 'spread_type': 'triangular'},
