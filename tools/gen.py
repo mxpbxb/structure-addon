@@ -590,7 +590,7 @@ wjson('data/generatormods/worldgen/structure_set/surface.json', {
     'placement': {'type': 'minecraft:random_spread', 'salt': 731400915, 'separation': 96, 'spacing': 256, 'spread_type': 'triangular'},
     'structures': [{'structure': 'generatormods:' + s['name'], 'weight': s['weight']} for s in gm_structs if not s['under']]})
 wjson('data/generatormods/worldgen/structure_set/underground.json', {
-    'placement': {'type': 'minecraft:random_spread', 'salt': 731400916, 'separation': 16, 'spacing': 48, 'frequency': 0.5},
+    'placement': {'type': 'minecraft:random_spread', 'salt': 731400916, 'separation': 13, 'spacing': 39},
     'structures': [{'structure': 'generatormods:' + s['name'], 'weight': s['weight']} for s in gm_structs if s['under']]})
 REPORT['gm_surface'] = [s['name'] for s in gm_structs if not s['under']]
 REPORT['gm_underground'] = [s['name'] for s in gm_structs if s['under']]
@@ -812,7 +812,8 @@ for sset in SURFACE_SETS:
     ns, name = sset.split('/')
     rel = 'data/%s/worldgen/structure_set/%s.json' % (ns, name)
     d = json.load(open(os.path.join(OUT, rel)))
-    d['placement']['frequency'] = SURFACE_FREQUENCY
+    # Generatormods' sets spawn 3 times as often as the rest (0.3.4).
+    d['placement']['frequency'] = SURFACE_FREQUENCY * (3 if ns == 'generatormods' else 1)
     wjson(rel, d)
 
 # ------------------------------------------------------------------ manifest
