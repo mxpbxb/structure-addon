@@ -1,6 +1,6 @@
 id = "structure_addon"
 name = "Structure Add-on"
-version = "0.3.2"
+version = "0.3.3"
 description = "Horizon port of Underground Biomes Constructs (big stone strata, rare except in stone biomes), Recurrent Complex, Ancient Structures and Generatormods (very rare surface structures, walls, cities and ruins; underground cities and dungeons) and Wild Caves (cave decoration, miner camps). Data only."
 authors = ["Exterminator Jeff & Zeno410 (Underground Biomes)", "Ivorius (Recurrent Complex)", "DevDyna (Wild Caves)", "TheGoldenWorld (Ancient Structures)", "formivore and template authors (Generatormods)", "mxpbxb (Horizon port)"]
 api = "0.2"

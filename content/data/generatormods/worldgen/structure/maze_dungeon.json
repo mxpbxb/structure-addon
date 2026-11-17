@@ -6,9 +6,14 @@
   "spawn_overrides": {},
   "start_pool": "generatormods:maze_dungeon",
   "use_expansion_hack": false,
-  "project_start_to_heightmap": "WORLD_SURFACE_WG",
   "start_height": {
-    "absolute": -45
+    "type": "minecraft:uniform",
+    "min_inclusive": {
+      "absolute": -60
+    },
+    "max_inclusive": {
+      "absolute": -30
+    }
   },
   "step": "underground_structures",
   "terrain_adaptation": "encapsulate"

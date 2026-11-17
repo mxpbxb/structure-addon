@@ -560,6 +560,8 @@ for name, path in sorted(gm_files.items()):
     weight = max(1, min(10, int(head.get('weight', '1') or 1)))
     gm_structs.append(dict(name=name, embed=embed, under=h >= 8 and h - embed <= 2, weight=weight, size=(w, h, l), blocks=n))
 
+# Buried Generatormods structures taller than this are placed deep underground, not off the surface.
+DEEP_UNDER = 16
 SNOWY_GM = ['minecraft:' + b for b in sorted(TOK['SNOWY'])]
 for s in gm_structs:
     nm = s['name']
@@ -572,7 +574,14 @@ for s in gm_structs:
     st = {'type': 'minecraft:jigsaw', 'biomes': '#generatormods:has_structure/' + nm, 'max_distance_from_center': 128,
           'size': 1, 'spawn_overrides': {}, 'start_pool': 'generatormods:' + nm, 'use_expansion_hack': False,
           'project_start_to_heightmap': 'WORLD_SURFACE_WG', 'start_height': {'absolute': -s['embed']}}
-    if s['under']:
+    if s['under'] and s['size'][1] > DEEP_UNDER:
+        # A tall buried one (the 47 high maze dungeon) hangs off the surface by its top: on low
+        # ground it stood out as a tower. It is placed deep instead, its top below y 17.
+        st.pop('project_start_to_heightmap')
+        st.update(start_height={'type': 'minecraft:uniform', 'min_inclusive': {'absolute': -60},
+                                'max_inclusive': {'absolute': min(-30, 17 - s['size'][1])}},
+                  step='underground_structures', terrain_adaptation='encapsulate')
+    elif s['under']:
         st.update(step='underground_structures', terrain_adaptation='encapsulate')
     else:
         st.update(step='surface_structures', terrain_adaptation='beard_thin')
@@ -581,7 +590,7 @@ wjson('data/generatormods/worldgen/structure_set/surface.json', {
     'placement': {'type': 'minecraft:random_spread', 'salt': 731400915, 'separation': 96, 'spacing': 256, 'spread_type': 'triangular'},
     'structures': [{'structure': 'generatormods:' + s['name'], 'weight': s['weight']} for s in gm_structs if not s['under']]})
 wjson('data/generatormods/worldgen/structure_set/underground.json', {
-    'placement': {'type': 'minecraft:random_spread', 'salt': 731400916, 'separation': 10, 'spacing': 32},
+    'placement': {'type': 'minecraft:random_spread', 'salt': 731400916, 'separation': 16, 'spacing': 48, 'frequency': 0.5},
     'structures': [{'structure': 'generatormods:' + s['name'], 'weight': s['weight']} for s in gm_structs if s['under']]})
 REPORT['gm_surface'] = [s['name'] for s in gm_structs if not s['under']]
 REPORT['gm_underground'] = [s['name'] for s in gm_structs if s['under']]
