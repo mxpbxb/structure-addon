@@ -5,7 +5,7 @@
     "separation": 96,
     "spacing": 256,
     "spread_type": "triangular",
-    "frequency": 0.016666666666666666
+    "frequency": 0.05
   },
   "structures": [
     {
