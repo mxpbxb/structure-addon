@@ -1,0 +1,12 @@
+{
+  "values": [
+    "generatormods:maze_dungeon",
+    "generatormods:small_well",
+    "generatormods:city_underground_mossy_coblestone_city",
+    "generatormods:city_underground_obsidian_city",
+    "generatormods:city_underground_stone_city",
+    "reccomplex:blaze_spawner_crystal",
+    "reccomplex:underground_crypt",
+    "reccomplex:underground_treeoid"
+  ]
+}

@@ -790,11 +790,35 @@ wjson('data/%s/neoforge/biome_modifier/strata_stony.json' % MODID, {
 REPORT['ubc_blocks'] = len(tab_items)
 REPORT['ubc_strata_features'] = len(feats)
 
+# ------------------------------------------------------------------ rarity and /locate
+# The surface structures are 60 times rarer than their spacing alone makes them: each place their
+# set would start one, only once in 60. The underground dungeons and cities get structure tags for
+# `/locate structure #structure_addon:dungeons` (and `#structure_addon:underground_cities`).
+SURFACE_SETS = ['ancientstructures/german_buildings', 'ancientstructures/japanese_buildings',
+                'ancientstructures/mayan_buildings', 'ancientstructures/roman_buildings',
+                'generatormods/ca_ruins', 'generatormods/great_walls', 'generatormods/surface',
+                'generatormods/walled_cities', 'reccomplex/surface']
+SURFACE_FREQUENCY = 1 / 60
+for sset in SURFACE_SETS:
+    ns, name = sset.split('/')
+    rel = 'data/%s/worldgen/structure_set/%s.json' % (ns, name)
+    d = json.load(open(os.path.join(OUT, rel)))
+    d['placement']['frequency'] = SURFACE_FREQUENCY
+    wjson(rel, d)
+def set_members(sset):
+    ns, name = sset.split('/')
+    d = json.load(open(os.path.join(OUT, 'data/%s/worldgen/structure_set/%s.json' % (ns, name))))
+    return [s['structure'] for s in d['structures']]
+cities = set_members('generatormods/underground_cities')
+wjson('data/%s/tags/worldgen/structure/underground_cities.json' % MODID, {'values': cities})
+wjson('data/%s/tags/worldgen/structure/dungeons.json' % MODID, {
+    'values': set_members('generatormods/underground') + cities + set_members('reccomplex/underground')})
+
 # ------------------------------------------------------------------ manifest
 with open(OUT + '/horizon-mod.toml', 'w', newline='\n') as f:
     f.write('''id = "%s"
 name = "Structure Add-on"
-version = "0.3.0"
+version = "0.3.2"
 description = "Horizon port of Underground Biomes Constructs (big stone strata, rare except in stone biomes), Recurrent Complex, Ancient Structures and Generatormods (very rare surface structures, walls, cities and ruins; underground cities and dungeons) and Wild Caves (cave decoration, miner camps). Data only."
 authors = ["Exterminator Jeff & Zeno410 (Underground Biomes)", "Ivorius (Recurrent Complex)", "DevDyna (Wild Caves)", "TheGoldenWorld (Ancient Structures)", "formivore and template authors (Generatormods)", "mxpbxb (Horizon port)"]
 api = "0.2"

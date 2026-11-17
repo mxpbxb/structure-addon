@@ -8,7 +8,7 @@ A data-only Horizon mod (`structure_addon`) that brings several old structure an
 - **Generatormods:** its building templates, Great Walls, walled cities with streets, and cellular-automaton ruins on the surface, plus underground cities and dungeons.
 - **Wild Caves:** cave decoration (stalactites, stalagmites, icicles, moss) and miner camps.
 
-Surface structures are very rare: each set spaces its structures 256 to 448 chunks apart. Underground ones are more common.
+Surface structures are very rare: each set spaces its structures 256 to 448 blocks apart, and only one place in 60 of those gets one. Underground ones are more common. Find the underground dungeons and cities with `/locate structure #structure_addon:dungeons`, or only the cities with `/locate structure #structure_addon:underground_cities`.
 
 ## Install
 
