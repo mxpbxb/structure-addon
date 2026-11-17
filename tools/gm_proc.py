@@ -978,7 +978,7 @@ wjson('data/%s/worldgen/structure_set/walled_cities.json' % GMP, {
     'placement': {'type': 'minecraft:random_spread', 'salt': 731400919, 'separation': 192, 'spacing': 448, 'spread_type': 'triangular'},
     'structures': [{'structure': '%s:city_%s' % (GMP, c), 'weight': w} for c, u, w in city_list if not u]})
 wjson('data/%s/worldgen/structure_set/underground_cities.json' % GMP, {
-    'placement': {'type': 'minecraft:random_spread', 'salt': 731400920, 'separation': 12, 'spacing': 32},
+    'placement': {'type': 'minecraft:random_spread', 'salt': 731400920, 'separation': 20, 'spacing': 56},
     'structures': [{'structure': '%s:city_%s' % (GMP, c), 'weight': w} for c, u, w in city_list if u]})
 GM_REPORT['walled_cities'] = [c for c, u, w in city_list if not u]
 GM_REPORT['underground_cities'] = [c for c, u, w in city_list if u]
