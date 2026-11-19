@@ -741,10 +741,12 @@ wjson('data/minecraft/tags/block/base_stone_overworld.json', {'values': base_sto
 wjson('data/minecraft/tags/item/stone_crafting_materials.json', {'values': craft_mat})
 wjson('data/minecraft/tags/item/stone_tool_materials.json', {'values': craft_mat})
 
+# Outside the stone biomes every stone stays below y 50, and every stone appears in deepslate too (0.4.0).
+DEEP = ('minecraft:deepslate', -60, 4)
 BANDS = {  # class -> list of (target block, min y, max y)
-    'sedimentary': [('minecraft:stone', 30, 160)],
-    'metamorphic': [('minecraft:stone', -8, 80)],
-    'igneous': [('minecraft:stone', -8, 40), ('minecraft:deepslate', -60, 4)],
+    'sedimentary': [('minecraft:stone', 30, 50), DEEP],
+    'metamorphic': [('minecraft:stone', -8, 50), DEEP],
+    'igneous': [('minecraft:stone', -8, 40), DEEP],
 }
 STRATA_CHANCE = 64      # elsewhere: each stone in about 1 chunk of 64, so most of the world stays stone
 STONY_CHANCE = 1        # stone biomes: every stone in every chunk, STONY_COUNT big blobs each, 2 to 48 below the surface
@@ -758,6 +760,20 @@ STONY = ['minecraft:stony_peaks', 'minecraft:jagged_peaks', 'minecraft:frozen_pe
          'biomesoplenty:highland', 'biomesoplenty:highland_moor', 'biomesoplenty:wintry_origin_valley',
          'biomesoplenty:dryland', 'biomesoplenty:lush_desert']
 wjson('data/%s/tags/worldgen/biome/stony.json' % MODID, {'values': STONY})
+# Solid stone biomes (0.4.0): where the biome info noise (one fixed pattern, cells about 200 blocks
+# across) is in either tail, a quarter of the world, a stone biome has no strata; instead all its
+# stone is one stone, picked at random for that biome and tail. Only the tails are used, so the
+# chosen places are separate patches with plain strata between them, not rings of one stone
+# around another. Horizon's noise is below -0.55 an eighth of the time, above 0.55 an eighth.
+TAILS = {'low': -0.55, 'high': 0.55}
+def tail_filter(tail):
+    level = TAILS[tail]
+    return {'type': 'minecraft:noise_threshold_count', 'noise_level': level,
+            'below_noise': 1 if tail == 'low' else 0, 'above_noise': 0 if tail == 'low' else 1}
+# Between the tails: the stone biomes with their strata.
+MIDDLE = [{'type': 'minecraft:noise_threshold_count', 'noise_level': TAILS['low'], 'below_noise': 0, 'above_noise': 1},
+          {'type': 'minecraft:noise_threshold_count', 'noise_level': TAILS['high'], 'below_noise': 1, 'above_noise': 0}]
+SOLID_SLABS = 18   # 16-block slabs down from the surface: from the highest peaks to below y 0
 feats, stony_feats = [], []
 for klass, sids in stones_by_class.items():
     for sid in sids:
@@ -782,7 +798,7 @@ for klass, sids in stones_by_class.items():
             # biome is still the stone biome's (deeper down it is often a cave biome).
             wjson('data/%s/worldgen/placed_feature/stony/%s.json' % (MODID, fid), {
                 'feature': '%s:strata/%s' % (MODID, fid),
-                'placement': [{'type': 'minecraft:count', 'count': STONY_COUNT},
+                'placement': MIDDLE + [{'type': 'minecraft:count', 'count': STONY_COUNT},
                               {'type': 'minecraft:in_square'},
                               {'type': 'minecraft:heightmap', 'heightmap': 'OCEAN_FLOOR_WG'},
                               # Horizon's offset takes -16..16 a step, so three steps make 2 to 48 down.
@@ -796,6 +812,37 @@ wjson('data/%s/neoforge/biome_modifier/strata.json' % MODID, {
     'type': 'neoforge:add_features', 'biomes': '#minecraft:is_overworld', 'features': feats, 'step': 'underground_ores'})
 wjson('data/%s/neoforge/biome_modifier/strata_stony.json' % MODID, {
     'type': 'neoforge:add_features', 'biomes': '#%s:stony' % MODID, 'features': stony_feats, 'step': 'underground_ores'})
+# The solid stone biomes. Each 16x16x16 slab of a chunk whose surface corner is in the stone biome
+# has its stone replaced, one block at a time; it runs before the strata and ores (raw generation),
+# so the ores come in the new stone, and no strata are left in it.
+all_stones = sorted(s for sids in stones_by_class.values() for s in sids)
+for sid in all_stones:
+    wjson('data/%s/worldgen/feature/solid/%s.json' % (MODID, sid), {
+        'type': 'minecraft:replace_single_block',
+        'targets': [{'target': {'predicate_type': 'minecraft:block_match', 'block': 'minecraft:stone'},
+                     'state': '%s:%s' % (MODID, sid)}]})
+used = set()
+solid_count = 0
+for biome in STONY:
+    picks = {tail: random.Random('solid %s %s' % (biome, tail)).choice(all_stones) for tail in TAILS}
+    biome_feats = []
+    for tail, sid in picks.items():
+        for k in range(SOLID_SLABS):
+            pid = '%s_%s_%d' % (tail, sid, k)
+            if pid not in used:
+                used.add(pid)
+                # Down 15, then 16 a slab: Horizon's offset takes -16..16 a step.
+                down = [{'type': 'minecraft:offset', 'x': 0, 'z': 0, 'y': -15}] +                        [{'type': 'minecraft:offset', 'x': 0, 'z': 0, 'y': -16}] * k
+                wjson('data/%s/worldgen/placed_feature/solid/%s.json' % (MODID, pid), {
+                    'feature': '%s:solid/%s' % (MODID, sid),
+                    'placement': [tail_filter(tail), {'type': 'minecraft:heightmap', 'heightmap': 'OCEAN_FLOOR_WG'},
+                                  {'type': 'minecraft:biome'}] + down +
+                                 [{'type': 'minecraft:cuboid', 'xz_size': 15, 'y_size': 15}]})
+            biome_feats.append('%s:solid/%s' % (MODID, pid))
+    wjson('data/%s/neoforge/biome_modifier/solid_%s.json' % (MODID, biome.replace(':', '_')), {
+        'type': 'neoforge:add_features', 'biomes': biome, 'features': biome_feats, 'step': 'raw_generation'})
+    solid_count += 1
+REPORT['solid_stone_biomes'] = solid_count
 REPORT['ubc_blocks'] = len(tab_items)
 REPORT['ubc_strata_features'] = len(feats)
 
@@ -820,8 +867,8 @@ for sset in SURFACE_SETS:
 with open(OUT + '/horizon-mod.toml', 'w', newline='\n') as f:
     f.write('''id = "%s"
 name = "Structure Add-on"
-version = "0.3.4"
-description = "Horizon port of Underground Biomes Constructs (big stone strata, rare except in stone biomes), Recurrent Complex, Ancient Structures and Generatormods (very rare surface structures, walls, cities and ruins; underground cities and dungeons) and Wild Caves (cave decoration, miner camps). Data only."
+version = "0.4.0"
+description = "Horizon port of Underground Biomes Constructs (big stone strata below y 50, rare except in stone biomes; a quarter of stone biomes all one stone), Recurrent Complex, Ancient Structures and Generatormods (very rare surface structures, walls, cities and ruins; underground cities and dungeons) and Wild Caves (cave decoration, miner camps). Data only."
 authors = ["Exterminator Jeff & Zeno410 (Underground Biomes)", "Ivorius (Recurrent Complex)", "DevDyna (Wild Caves)", "TheGoldenWorld (Ancient Structures)", "formivore and template authors (Generatormods)", "mxpbxb (Horizon port)"]
 api = "0.2"
 side = "both"

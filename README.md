@@ -2,7 +2,7 @@
 
 A data-only Horizon mod (`structure_addon`) that brings several old structure and world-generation mods into one place:
 
-- **Underground Biomes Constructs:** 56 stones (granites, marbles, basalts, shales and more) as big strata. Most of the world stays plain stone: elsewhere each stone appears in about one chunk in 64. Stone biomes (Stony, Jagged and Frozen Peaks, windswept hills, stony shores, dripstone caves, and Biomes O' Plenty's crags, volcanoes, highlands and the like) are full of them, from just under the surface down into the mountain.
+- **Underground Biomes Constructs:** 56 stones (granites, marbles, basalts, shales and more) as big strata. Most of the world stays plain stone: elsewhere each stone appears in about one chunk in 64, always below y 50, in stone and in deepslate. Stone biomes (Stony, Jagged and Frozen Peaks, windswept hills, stony shores, dripstone caves, and Biomes O' Plenty's crags, volcanoes, highlands and the like) are full of them, from just under the surface down into the mountain. In about a quarter of the world (two kinds of patch a few hundred blocks across, the same in every world), a stone biome has no strata: all its stone is one of these stones instead, picked at random for that biome.
 - **Recurrent Complex:** its surface buildings (towers, pyramids, forts, huts and more) and its underground crypts.
 - **Ancient Structures:** German, Japanese and Mayan buildings, villages and temples.
 - **Generatormods:** its building templates, Great Walls, walled cities with streets, and cellular-automaton ruins on the surface, plus underground cities and dungeons.
