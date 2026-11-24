@@ -6,7 +6,7 @@ A data-only Horizon mod (`structure_addon`) that brings several old structure an
 - **Recurrent Complex:** its surface buildings (towers, pyramids, forts, huts and more) and its underground crypts.
 - **Ancient Structures:** German, Japanese and Mayan buildings, villages and temples.
 - **Generatormods:** its building templates, Great Walls, walled cities with streets, and cellular-automaton ruins on the surface, plus underground cities and dungeons.
-- **Wild Caves:** cave decoration (stalactites, stalagmites, icicles, moss) and miner camps.
+- **Wild Caves:** cave decoration (stalactites, stalagmites, icicles, moss), miner camps and big ore veins. Its diamond veins are left out (since 0.4.1): the game's own diamond ore is unchanged.
 
 Surface structures are very rare: each set spaces its structures 256 to 448 blocks apart, and only one place in 60 of those gets one. Generatormods' structures are 3 times as common as that (one place in 20), and its dungeons and underground cities 3 times as common as before. Its tall maze dungeon is always deep underground (it used to stick out of low ground as a sandstone-coloured tower).
 

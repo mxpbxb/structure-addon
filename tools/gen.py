@@ -628,8 +628,13 @@ for root, dirs, files in os.walk(WCD):
                 v = v['id'] if isinstance(v, dict) else v
                 vals += C_TAGS.get(v, [v] if not v.startswith('#c:') else [])
             wjson('data/wildcaves/' + relp, {'values': list(dict.fromkeys(vals))})
+        elif relp.endswith('ore_vein/overworld/diamond.json'):
+            continue  # 0.4.1: no diamond veins
         elif relp.endswith('.json'):
-            wjson('data/wildcaves/' + relp, json.load(open(src)))
+            d = json.load(open(src))
+            if relp == 'neoforge/biome_modifier/ore_vein/overworld.json':
+                d['features'] = [f for f in d['features'] if f != 'wildcaves:ore_vein/overworld/diamond']
+            wjson('data/wildcaves/' + relp, d)
         else:
             dst = os.path.join(OUT, 'data/wildcaves', relp)
             os.makedirs(os.path.dirname(dst), exist_ok=True)
@@ -867,8 +872,8 @@ for sset in SURFACE_SETS:
 with open(OUT + '/horizon-mod.toml', 'w', newline='\n') as f:
     f.write('''id = "%s"
 name = "Structure Add-on"
-version = "0.4.0"
-description = "Horizon port of Underground Biomes Constructs (big stone strata below y 50, rare except in stone biomes; a quarter of stone biomes all one stone), Recurrent Complex, Ancient Structures and Generatormods (very rare surface structures, walls, cities and ruins; underground cities and dungeons) and Wild Caves (cave decoration, miner camps). Data only."
+version = "0.4.1"
+description = "Horizon port of Underground Biomes Constructs (big stone strata below y 50, rare except in stone biomes; a quarter of stone biomes all one stone), Recurrent Complex, Ancient Structures and Generatormods (very rare surface structures, walls, cities and ruins; underground cities and dungeons) and Wild Caves (cave decoration, miner camps, ore veins but no diamond ones). Data only."
 authors = ["Exterminator Jeff & Zeno410 (Underground Biomes)", "Ivorius (Recurrent Complex)", "DevDyna (Wild Caves)", "TheGoldenWorld (Ancient Structures)", "formivore and template authors (Generatormods)", "mxpbxb (Horizon port)"]
 api = "0.2"
 side = "both"

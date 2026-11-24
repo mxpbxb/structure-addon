@@ -1,7 +1,7 @@
 id = "structure_addon"
 name = "Structure Add-on"
-version = "0.4.0"
-description = "Horizon port of Underground Biomes Constructs (big stone strata below y 50, rare except in stone biomes; a quarter of stone biomes all one stone), Recurrent Complex, Ancient Structures and Generatormods (very rare surface structures, walls, cities and ruins; underground cities and dungeons) and Wild Caves (cave decoration, miner camps). Data only."
+version = "0.4.1"
+description = "Horizon port of Underground Biomes Constructs (big stone strata below y 50, rare except in stone biomes; a quarter of stone biomes all one stone), Recurrent Complex, Ancient Structures and Generatormods (very rare surface structures, walls, cities and ruins; underground cities and dungeons) and Wild Caves (cave decoration, miner camps, ore veins but no diamond ones). Data only."
 authors = ["Exterminator Jeff & Zeno410 (Underground Biomes)", "Ivorius (Recurrent Complex)", "DevDyna (Wild Caves)", "TheGoldenWorld (Ancient Structures)", "formivore and template authors (Generatormods)", "mxpbxb (Horizon port)"]
 api = "0.2"
 side = "both"
