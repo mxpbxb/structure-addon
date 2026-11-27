@@ -5,6 +5,7 @@ import sys, os, json, re, shutil, zipfile, collections, zlib, random
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import nbt
 import blocks as B
+import crop16
 
 P = os.path.expanduser('~/horizon-dev/structures-port')
 J = P + '/jars'
@@ -697,7 +698,11 @@ def add_block(bid, tex, template, display, drop=None, silk=False, hardness=None)
     wjson('assets/%s/items/%s.json' % (MODID, bid), {'model': {'type': 'minecraft:model', 'model': '%s:block/%s' % (MODID, bid)}})
     dst = os.path.join(OUT, 'assets/%s/textures/block/%s.png' % (MODID, bid))
     os.makedirs(os.path.dirname(dst), exist_ok=True)
-    shutil.copy(os.path.join(UBT, tex + '.png'), dst)
+    if template == 'minecraft:stone':
+        # The stone as found in the world: Underground Biomes' 32x32, cropped to vanilla's 16x16.
+        crop16.crop16(os.path.join(UBT, tex + '.png'), dst)
+    else:
+        shutil.copy(os.path.join(UBT, tex + '.png'), dst)
     me = '%s:%s' % (MODID, bid)
     if drop and drop != me:
         entries = [{'type': 'minecraft:alternatives', 'children': [
